@@ -1,10 +1,9 @@
 ---
 title: "Quarto:<br>A library to run them all?"
-# subtitle: "A collaborative exercise to use, learn and assess quarto for authoring reproducible documents in different scenarios"
-subtitle: "RSE Conference 2022 | Newcastle Upon Tyne"
+subtitle: "A collaborative exercise to use, learn and assess Quarto for reproducible science"
 author: 
-  - name: "Carlos Cámara-Menoyo |  Cagatay Turkay | James Tripp"
-institute: Centre for Interdisciplinary Methodologies (University of Warwick) | IT Services (University of Warwick)
+  - name: "Lorenzo Campoli"
+institute: Macquarie University, Sydney, NSW, Australia
 title-slide-attributes:
     data-background-image: "https://vignette.wikia.nocookie.net/lego-lord-of-the-rings/images/4/4c/The_One_Ring.jpg/revision/latest?cb=20130113172456"
     # data-background-size: contain
@@ -14,8 +13,8 @@ format:
   revealjs:
     #theme: serif
     theme: [default, css/warwick.scss, css/warwick-fonts.scss]
-    logo: images/logo_black.png 
-    footer: https://bit.ly/rsecon22-quarto
+    logo: images/logo_mq2.jpeg #logo_black.png 
+    #footer: #https://bit.ly/rsecon22-quarto
     transition: slide
     background-transition: fade
 editor: visual
@@ -30,14 +29,13 @@ from: markdown+emoji
 
 # Plan
 
-1.  Introductions 
+1.  Introductions
 2.  Introduction to Quarto
 3.  Use cases
-    1.  Group formation and cases 
-    2.  Working in groups - with break! 
-4.  Large group Discussion 
+    1.  Group formation and cases
+    2.  Working in groups - with break!
+4.  Large group Discussion
 5.  Farewell
-
 
 # Introductions {background-color="#552D62"}
 
@@ -45,7 +43,7 @@ Let's get to know each other
 
 <!--#Instructions https://quarto.org/docs/presentations/revealjs/  -->
 
-## About us {.smaller}
+## About me {.smaller}
 
 <!-- ::: {style="max-width: 200px; float: right;"} -->
 
@@ -53,123 +51,97 @@ Let's get to know each other
 
 <!-- ::: -->
 
-::: columns
-::: {.column width="33%"}
-![](images/carlos.png){fig-alt="Carlos Cámara" fig-align="center" width="250"}
+<!-- ::: columns -->
 
-**Carlos Cámara**
+::: {.column width="100%"}
 
-*Research Software Engineer*
+![](images/lorenzo.png){fig-alt="Lorenzo Campoli" fig-align="center" width="250"}
 
-[carlos.camara\@warwick.ac.uk](mailto:carlos.camara@warwick.ac.uk){.email}
+**Lorenzo Campoli**
 
--   R user
--   Interested in reproducibility, open science, geospatial data, visualisation
-:::
+*Research Space Engineer*
 
-::: {.column width="33%"}
-![](images/cagatay.png){fig-alt="Carlos Cámara" fig-align="center" width="250"}
+[lorenzo.campoli\@mq.edu.au](mailto:lorenzo.campoli@mq.edu.au){.email}
 
-**Cagatay Turkay**
-
-*Professor*
-
-[cagatay.turkay\@warwick.ac.uk](mailto:cagatay.turkay@warwick.ac.uk)
-
--   Python user
--   Interested in visualisation and data science
-:::
-
-::: {.column width="33%"}
-![](images/james.png){fig-alt="Carlos Cámara" fig-align="center" width="250"}
-
-**James Tripp**
-
-*Research Software Engineer*
-
-[james.tripp\@warwick.ac.uk](mailto:cagatay.turkay@warwick.ac.uk){.email}
-
--   Python, R and PHP user
--   Interested in research software engineering, data science and digital humanities
-:::
-:::
-
-::: notes
-He uses Python and I love using R and we both work together. It is partially because of that that we decided to explore using quarto in our Data Science and Data Visualisation classes. This workshop is, then, an excuse to force us using it and learn by doing.
+-   Research interests: Computational Fluid Dynamics (CFD), 
+    high-speed non-equilibrium flows, shock-fitting numerical methods,
+    data-driven turbulence closure modelling, unsupervised machine learning
+-   New R user
+-   Interested in code reproducibility, maintainability, open science, ...
 :::
 
 ## About you {background-color="black" background-image="https://healthyschoolspa.org/wp-content/uploads/2019/02/Kids-in-Class.jpeg" background-opacity="0.5"}
 
-Let us know about your **prior knowledge about quarto**
+Let us know about your **prior knowledge about Quarto**
 
-1. Experts
-2. Some degree of knowledge
-3. Never used before, but I know what it is
-3. I do not know what it is
+1.  Experts
+2.  Some degree of knowledge
+3.  Never used before, but I know what it is
+4.  I do not know what it is
 
 . . .
 
 About your **preferred programming language**:
 
-* R [| Python]{.fragment} [| Julia]{.fragment}  
-
-. . . 
-
-About **this workshop**: Have you had time to read cases' descriptions?
-
-::: aside
-
-Usually, we'd be asking you to introduce yourselves, but given the large number of attendees, we have done that via [this github issue](https://github.com/WarwickCIM/quarto-workshop/issues/17){style="color:white!important;text-decoration:underline"}.
-
-:::
-
-## Disclaimer {background-color="black" background-image="https://images.unsplash.com/photo-1608094920984-5b54ce1bb792?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" background-opacity="0.4"}
-
-**About us**
-
-We are not Quarto experts!
-
-We are not affiliated in any way to Quarto or Posit. We do not have any commercial interest.
-
-We are just quarto users who want to share our progress and engage with other users in a co-creation process with an attitude of *healthy skepticism*.
+-   R [\| Python]{.fragment} [\| Julia]{.fragment}  [\| Fortran]{.fragment}
+      [\| C/C++]{.fragment} [\| ...?]{.fragment}
 
 . . .
+ 
+<!-- ## Disclaimer {background-color="black" background-image="https://images.unsplash.com/photo-1608094920984-5b54ce1bb792?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" background-opacity="0.4"} -->
 
-**About the session**
+<!-- **About me** -->
 
-This is not (just) a talk about quarto. Others have done it very well before[^1]. We will be presenting quarto's main claims and putting them to a test (with your help).
+<!-- I am not Quarto expert! -->
 
-. . .
+<!-- I am not affiliated in any way to Quarto or Posit. -->
 
-**About the slides**
+<!-- I do not have any commercial interest. -->
 
-These slides have been created with quarto (of course!)
+<!-- I am just Quarto user who wants to share his progress and engage with other  -->
+<!-- users in a co-creation process with an attitude of *healthy skepticism*. -->
 
-[^1]: See references' section
+<!-- . . . -->
 
+<!-- **About the session** -->
+
+<!-- This is not (just) a talk about Quarto. Others have done it very well before[^1].  -->
+<!-- We will be presenting Quarto's main claims and putting them to a test (with your help). -->
+
+<!-- [^1]: See references' section -->
+
+<!-- . . . -->
+
+<!-- **About the slides** -->
+
+<!-- These slides have been created with Quarto (of course!) -->
 
 # Quarto {background-color="#2780e3"}
 
-A brief overview to quarto 
+A brief overview to Quarto
 
-[(that's why we are here, right?)]{.smaller}
+<!--[(that's why we are here, right?)]{.smaller}-->
 
 ## Preamble
 
--   Agreement on importance of Literate programming (concept) and notebooks (artifacts)
+-   Agreement on importance of Literate programming[^1] <!--(concept) and notebooks (artifacts) -->
 -   Lots of different solutions, mostly language specific
+
+[^1]: Literate programming is a methodology that combines a programming language
+with a documentation language, thereby making programs more robust, more portable, 
+more easily maintained, and arguably more fun to write than programs that are 
+written only in a high-level language ([Knuth, 1984](https://www-cs-faculty.stanford.edu/~knuth/lp.html)).
 
 . . .
 
-::: columns 
+::: columns
 ::: {.column width="50%"}
 ### R: Rmarkdown
 
 -   Markdown with configurable code blocks
 -   Focus on R (but does support other languages [see here](https://bookdown.org/yihui/rmarkdown/language-engines.html))
 -   Can compile to other formats:
-    -   natively
-    -   bookdown, blogdown, ...
+    -   natively, bookdown, blogdown, ...
 :::
 
 ::: {.column width="50%"}
@@ -184,61 +156,52 @@ A brief overview to quarto
 
 . . .
 
-This might be about to change with quarto
+<!-- This might be about to change with Quarto -->
 
 ::: notes
+But before actually speaking about Quarto, I wanted to highlight two items.
 
-But before actually speaking about quarto, we wanted to highlight two items.
-
-first, the shared agreement in the DS community about the importance of literate programming ...
+First, the shared agreement in the community about the importance of literate programming ...
 
 And second, that the way this has been approached greatly differs based on the programming language you may be using.
-
-
-
 :::
 
-## What's quarto?
+## What's Quarto?
 
-According to their creators[^development] ([Posit](https://posit.co/) -formerly RStudio)): 
+According to their creators[^2] ([Posit](https://posit.co/) - formerly RStudio)):
+
+[^2]: Development started in January 2021 and is under heavy development (weekly releases)
 
 -   "Open-source scientific and technical publishing system built on Pandoc" - [quarto.org](https://quarto.org/)
 -   "Code output via integration with Jupyter, Knitr, and Observable" - [GitHub Repo](https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/)
 
-
-. . . 
+. . .
 
 From a technical standpoint (Adapted from [Mock, 2022](https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html#/so-what-is-quarto)):
 
-> Quarto is a **command line interface** (CLI) [that **renders** mixed-format files (`.ipynb`/Jupyter notebook) OR plain text files (`.qmd`, `.rmd`, `.md`)]{.fragment} [into different **outputs** (reports, books, websites, presentations...)]{.fragment} [, which can be in different **formats** (PDF/Word/HTML...) .]{.fragment} 
-
-[^development]: Development started in January 2021 and is under heavy development (weekly releases)
-
+> Quarto is a **command line interface** (CLI) [that **renders** mixed-format files (`.ipynb`/Jupyter notebook) OR plain text files (`.qmd`, `.rmd`, `.md`)]{.fragment} [into different **outputs** (reports, books, websites, presentations...)]{.fragment} [, which can be in different **formats** (PDF/Word/HTML...) .]{.fragment}
 
 ::: notes
+So, what's Quarto, then?
 
-So, what's quarto, then?
+According to Posit (formerly known as Rstudio), the creators of Quarto, Quarto is the next generation of Rmarkdown...
 
-According to Posit (formerly known as Rstudio), the creators of quarto, quarto is the next generation of Rmarkdown...
+Ok, this is how Quarto is marketed, but this may not be clear to most of us, so we tried to define it from a more technical point of view.
 
-Ok, this is how quarto is marketed, but this may not be clear to most of us, so we tried to define it from a more technical point of view.
-
-Adapting from Mock, quarto is...
-
+Adapting from Mock, Quarto is...
 :::
 
-## How does it work? (Overview){.smaller}
+## How does it work? (Overview) {.smaller}
 
 ::: columns
 ::: {.column width="50%"}
-
 From a `qmd` file...
 
-````{.r code-line-numbers="|1-10|12-16|17-26"}
+```` {.r code-line-numbers="|1-10|12-16|17-26"}
 ---
 title: "ggplot2 demo"
-author: "Norah Jones"
-date: "5/22/2021"
+author: "Lorenzo Campoli"
+date: "27/10/2023"
 format: 
     html:
     fig-width: 8
@@ -248,8 +211,7 @@ format:
 
 ## Air Quality
 
-@fig-airquality further explores the impact of temperature 
-    on ozone level.
+@fig-airquality further explores the impact of temperature on ozone level.
 
 ```{{r}}
 #| label: fig-airquality
@@ -265,35 +227,31 @@ ggplot(airquality, aes(Temp, Ozone)) +
 
 Anatomy:
 
-* Frontmatter defintions
-* Content
-    * Text (Markdown with batteries)
-    * Code blocks 
-
+-   Frontmatter defintions
+-   Content
+    -   Text 
+    -   Code blocks
 :::
 
-::: {.column width="50%" .fragment}
-
+::: {.column .fragment width="50%"}
 ... to its output.
 
-![](images/hello-knitr.png)
+![](images/my_hello_knitr.png)
 
-In this case, an **html document** (line 6) with text, code (folded -see line 9) and output.
+In this case, an **html document** (line 6) with text, code (folded - see line 9) and output.
 :::
 :::
-
 Does this look familiar to you?
 
 ::: notes
+We've seen what Quarto is, so now let's focus on how it does its thing.
 
-We've seen what quarto is, so now let's focus on how it does its thing.
-
-At this point, if there's someone who has used Rmd before may be thinking. But Carlos, you've jjust defined how rmd works!
+At this point, if there's someone who has used Rmd before may be thinking. 
+But Lorenzo, you've just defined how rmd works!
 
 And aside from minor changes in the frontmatter, that's true
 
 So probably the next slide will bring some light on the differences
-
 :::
 
 ## How does it work?
@@ -305,34 +263,28 @@ This is what happens behind the scenes for single file documents:
 . . .
 
 ::: {.callout-note appearance="simple"}
-
-Not comprehensive (i.e. does not include projects, bibliographical references and cross-references -tables, figures, chapters-, add custom css, including files within files...)
-
+Not comprehensive (i.e. does not include projects, bibliographical references and cross-references tables, figures, chapters, add custom css, including files within files ...)
 :::
 
 ::: notes
-
 At this point, if there's someone who has used Rmd before may be thinking. But Carlos, you've jjust defined how rmd works!
 
 And aside from minor changes in the frontmatter, that's true
 
 So probably why this diagram will bring some light on the differences
-
 :::
 
-## How can quarto be called? {.smaller}
+## How can Quarto be called? {.smaller}
 
 ::: columns
-
-::: {.column}
+::: column
 From CLI:
 
-```bash
+``` bash
 quarto --help
 
   Usage:   quarto 
-  Version: 0.9.563
-                  
+  Version: 1.3.433
 
   Description:
 
@@ -356,14 +308,10 @@ quarto --help
     check           [target]            - Verify correct functioning of Quarto installation.
     help            [command]           - Show this help or the help of a sub-command.  
 ```
-
 :::
 
-
-::: {.column}
-
-::: {.fragment}
-
+::: column
+::: fragment
 From your favourite IDE:
 
 ::: r-stack
@@ -373,108 +321,89 @@ From your favourite IDE:
 
 ![](https://quarto.org/docs/computations/images/python-vscode.png){.fragment width="1500" fig-alt="A screenshot of a Quarto document rendered inside VSCode"}
 :::
-
 :::
 :::
 :::
 
-
-## What can quarto do? {.smaller}
+## What can Quarto do? {.smaller}
 
 ::: aside
 Visit [Quarto's gallery](https://quarto.org/docs/gallery/) for more examples
 :::
 
-:::: panel-tabset
-
+::: panel-tabset
 ### Documents
 
 ::: columns
-
-::: {.column}
+::: column
 Articles and reports in html, docx, pdf, with complex layouts or based on templates.
 
 Some examples:
 
-* Tufte-inspired layout (in [HTML](https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.html) and [PDF](https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.pdf))
-* Multi-page document with a template, aimed at being printed ([source](https://github.com/nmfs-opensci/quarto_titlepages/blob/main/titlepages/bg-image/article.qmd), [PDF](https://nmfs-opensci.github.io/quarto_titlepages/titlepages/bg-image/article.pdf))
-* Docx document ([source](https://github.com/quarto-dev/quarto-gallery/blob/main/articles/msword/msword.qmd), [output](https://quarto-dev.github.io/quarto-gallery/articles/msword/msword.docx))
-
+-   Tufte-inspired layout (in [HTML](https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.html) and [PDF](https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.pdf))
+-   Multi-page document with a template, aimed at being printed ([source](https://github.com/nmfs-opensci/quarto_titlepages/blob/main/titlepages/bg-image/article.qmd), [PDF](https://nmfs-opensci.github.io/quarto_titlepages/titlepages/bg-image/article.pdf))
+-   Docx document ([source](https://github.com/quarto-dev/quarto-gallery/blob/main/articles/msword/msword.qmd), [output](https://quarto-dev.github.io/quarto-gallery/articles/msword/msword.docx))
 :::
 
-::: {.column}
+::: column
 <!-- [![](images/gallery_document_tufte.png)](https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.html) -->
 
 [![Shamely copied from Quarto's gallery](images/gallery_documents.png)](https://quarto.org/docs/gallery/)
 :::
 :::
 
-
 ### Presentations
 
 ::: columns
-
-::: {.column}
+::: column
 In ppt, [beamer](https://latex-beamer.com/) or [revealjs](https://revealjs.com/)
-
 :::
 
-::: {.column}
+::: column
 [![](images/quarto_gallery_slides.png)](https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html)
-
 :::
 :::
 
 ### Projects
 
 ::: columns
+::: column
+Combine several `*.qmd` files + `_quarto.yml` with config (project type, structure, properties).
 
-::: {.column }
-
-Combine several `*.qmd` files + `_quarto.yml` with config (project type, structure, properties). 
-
-* Websites
-    * Quarto website ([source](https://github.com/quarto-dev/quarto-web), [output](https://quarto.org))
-* Books
-    * Telling stories with data ([source](https://github.com/RohanAlexander/telling_stories), [output](https://tellingstorieswithdata.com/))
-* Blogs
-    * A quarto tip a day ([source](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/), [output](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/))
-* Wikis
+-   Websites
+    -   Quarto website ([source](https://github.com/quarto-dev/quarto-web), [output](https://quarto.org))
+-   Books
+    -   Telling stories with data ([source](https://github.com/RohanAlexander/telling_stories), [output](https://tellingstorieswithdata.com/))
+-   Blogs
+    -   A Quarto tip a day ([source](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/), [output](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/))
+-   Wikis
 
 ::: {.callout-note appearance="simple"}
 Project is generated using `quarto render` instead of `quarto preview`
 :::
-
-:::
-::: {.column}
-
-![](images/quarto_gallery_books.png)
-:::
 :::
 
-::::
+::: column
+![](images/ quarto_gallery_books.png)
+:::
+:::
+:::
 
-## What can quarto do? (Interactivity) {.smaller}
+## What can Quarto do? (Interactivity) {.smaller}
 
 ::: columns
+::: column
+Additionally, we can add interactivity[^3] to the previous outputs:
 
-::: {.column}
-
-Additionally, we can add interactivity[^interactivity] to the previous outputs:
-
-[^interactivity]: More info: [Interactivity overview (Official Guide)](https://quarto.org/docs/interactive/)
-
-- Web browser:
-    - **htmlwidgets** ([Documentation](https://quarto.org/docs/interactive/widgets/htmlwidgets.html))
-    - **jupyterwidgets** ([Documentation](https://quarto.org/docs/interactive/widgets/jupyter.html))
-    - **ObservableJS** ([Documentation](https://quarto.org/docs/interactive/ojs/))
-- Server side:
-    - **shiny** ([Documentation](https://quarto.org/docs/interactive/shiny/))
-
-
+-   Web browser:
+    -   **htmlwidgets** ([Documentation](https://quarto.org/docs/interactive/widgets/htmlwidgets.html))
+    -   **jupyterwidgets** ([Documentation](https://quarto.org/docs/interactive/widgets/jupyter.html))
+    -   **ObservableJS** ([Documentation](https://quarto.org/docs/interactive/ojs/))
+-   Server side:
+    -   **shiny** ([Documentation](https://quarto.org/docs/interactive/shiny/))
 :::
 
-::: {.column}
+::: column
 ```{r}
 #| code-fold: false
 #| echo: true
@@ -482,30 +411,29 @@ library(leaflet)
 
 leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
-  addMarkers(lat=54.9734625, lng=-1.6242486, popup="RSECon 2022")
+  addMarkers(lat=-33.775259, lng= 151.112915, popup="RSECon 2022")
 
 ```
-
+:::
 :::
 
-:::
- 
+[^3]: More info: [Interactivity overview (Official Guide)](https://quarto.org/docs/interactive/)
 
-## Key features {background-color="rgb(236, 248, 232)" .smaller}
- 
+## Key features {.smaller background-color="rgb(236, 248, 232)"}
+
 -   Language agnostic (Works with `R`, `Python`, `Julia`, `Observable`):
     -   Can combine different languages in a single document
     -   Same syntax
     -   One command line
 
-. . . 
+. . .
 
 -   IDE Agnostic (Integrations - see [getting started](https://quarto.org/docs/get-started/))
     -   RStudio
     -   Visual Studio Code/VS Codium
     -   Jupyter
 
-. . . 
+. . .
 
 -   Diverse outputs
     -   Formats: `pdf`, `html`, `epub`, `docx`...
@@ -513,27 +441,26 @@ leaflet() %>%
 -   Sensible defaults
     -   Bootstrap
 
-
 ## Key features {background-color="rgb(255, 241, 232)"}
 
 Most of the "not so great" features derive from being under heavy development:
 
 -   New features to come (to be at par with knitr and to surpass it)
-    - No new features added to `Rmarkdown`[^rmd]
+    -   No new features added to `Rmarkdown`[^4]
 -   Not as mature as other solutions
--   Weekly releases 
-    - Different versions, different results
+-   Weekly releases
+    -   Different versions, different results
 
-[^rmd]: For more info about replacing Rmarkdown with quarto, you can refer to [these FAQs on quarto's webiste](https://quarto.org/docs/faq/rmarkdown.html) and Yihui Xie’s blog post [With Quarto Coming, is R Markdown Going Away? No](https://yihui.org/en/2022/04/quarto-r-markdown/)
+[^4]: For more info about replacing Rmarkdown with Quarto, you can refer to [these FAQs on quarto's website](https://quarto.org/docs/faq/rmarkdown.html) and Yihui Xie's blog post [With Quarto Coming, is R Markdown Going Away? No](https://yihui.org/en/2022/04/quarto-r-markdown/)
 
 ## Further references
 
-These references introduce quarto way more extensively than we just did:
+These references introduce Quarto way more extensively than I just did:
 
 -   James Goldie: [*Quarto: Create beautiful documents with R, Python, Julia and Observable*](https://runapp2022.talks.jamesgoldie.dev/#/james-goldie)
 -   [*Hello Quarto! A Quarto Chat with NASA Openscapes, co-hosted with R-Ladies Santa Barbara*](https://www.openscapes.org/blog/2022/06/22/hello-quarto/)
     -   Mine Çetinkaya-Rundel and Julia Stewart Lowndes: [*Hello quarto*](https://mine.quarto.pub/hello-quarto/#/hello-quarto-title)
--   Tom Mock: [Getting started with Quarto: *2-hour workshop on quarto*](https://jthomasmock.github.io/quarto-2hr-webinar/) 
+-   Tom Mock: [Getting started with Quarto: *2-hour workshop on quarto*](https://jthomasmock.github.io/quarto-2hr-webinar/)
     -   [Video Recording](https://www.youtube.com/watch?v=yvi5uXQMvu4)
     -   [Slides](https://jthomasmock.github.io/quarto-2hr-webinar/materials/01-intro-quarto.html)
 
@@ -548,119 +475,87 @@ Your turn, now
 ## Group formation and cases {background-image="https://www.mediatwo.net/wp-content/uploads/2017/06/282568_x-marks-the-spot-png-1024x404.png" background-size="contain" background-opacity="0.1"}
 
 ::: columns
-
-::: {.column}
-1. Choose a case from the ([case list](https://github.com/WarwickCIM/quarto-workshop/labels/cases)) on GitHub
+::: column
+1.  Choose a case from the ([case list](https://github.com/WarwickCIM/quarto-workshop/labels/cases)) on GitHub.
 
 [2. Each case has a place in the room. Please go to the place for your corresponding case.]{.fragment}
 
-[3. Form groups of 4 or 5. Say hi to your new friends]{.fragment}
+[3. Form groups of 4 or 5. Say hi to your new friends and colleagues.]{.fragment}
 
-[4. Choose **Documentors** and **Spokesperson**]{.fragment}
+[4. Choose **Documentors** and **Spokesperson**.]{.fragment}
 :::
 
-::: {.column}
-
+::: column
 ![](images/task_list.png)
 
 ![](images/task_description.png)
-
 :::
-
 :::
 
 ## Work on your case
 
-1. Install quarto's binaries: <https://quarto.org/docs/get-started/>
-2. Fork [this repository](https://github.com/WarwickCIM/quarto-workshop/)
+1.  Install quarto's binaries: <https://quarto.org/docs/get-started/>
+2.  Fork [this repository](https://github.com/WarwickCIM/quarto-workshop/)
 
 . . .
 
-3. Create a new folder for your case under `cases/`
-4. Copy the template from  [`cases/template/documentation_template.qmd`](https://github.com/WarwickCIM/quarto-workshop/blob/main/cases/template/documentation_template.qmd) to your folder, which will be used to document the process
-5. Make any changes needed
+3.  Create a new folder for your case under `cases/`
+4.  Copy the template from [`cases/template/documentation_template.qmd`](https://github.com/WarwickCIM/quarto-workshop/blob/main/cases/template/documentation_template.qmd) to your folder, which will be used to document the process
+5.  Make any changes needed
 
 . . .
 
-6. Commit any changes
-7. Submit Pull Request to the [Workshop's GitHub repo](https://github.com/WarwickCIM/quarto-workshop/)
-
+6.  Commit any changes
+7.  Submit Pull Request to the [Workshop's GitHub repo](https://github.com/WarwickCIM/quarto-workshop/)
 
 ::: {.callout-important appearance="simple"}
-
 **Please document the process!**
 :::
 
-##  Let the games begin! {background-color="black" background-image="images/hunger_games_noloop.gif" background-opacity="0.85"}
-
-
+## Let the games begin! {background-color="black" background-image="images/hunger_games_noloop.gif" background-opacity="0.85"}
 
 # 
 
-::: {.r-fit-text}
-See you at 16:00
+::: r-fit-text
+See you at 15:00
 :::
 
+## Group Feedback {background-color="#552D62" background-image="images/feedback.jpg" background-opacity="0.4" auto-animate="true" auto-animate-easing="ease-in-out"}
 
-# [R]{data-id="R"}econ[vene]{data-id="convene"}! {background-color="#552D62" auto-animate=true auto-animate-easing="ease-in-out"}
-For the large group discussion
+-   Spokesperson from each group
+-   What did you do? 
+-   What were your thoughts?
 
-::: notes
-Ok, now it's time to reconvene
-
-:::
-
-
-# [R]{data-id="R"}SECon-[vene]{data-id="convene"}? {background-color="#552D62" background-image="https://i2-prod.chroniclelive.co.uk/incoming/article5680478.ece/ALTERNATES/s1227b/Quayside-at-night-by-Alan-Firth.jpg" background-opacity="0.4" auto-animate=true auto-animate-easing="ease-in-out"}
-For the large group discussion
-
-::: notes
-...or should we say "RSECon-vene?"
-
-Now seriously: this is the time to share your thoughts after having worked with quarto for a while.
-
-:::
-
-## Group Feedback {background-color="#552D62" background-image="images/feedback.jpg" background-opacity="0.4" auto-animate=true auto-animate-easing="ease-in-out"}
-
-* Spokesperson from each group
-* What did you do? What were your thoughts?
-
-## Group Discussion 
+## Group Discussion
 
 ::: columns
-
 ::: column
 Some ideas (but feel free to add yours!):
 
-* How are you going to use quarto in the future?
-* If not, why not?
-* What's missing?
-
+-   Are you going to use Quarto in the future?
+-   If not, why?
+-   If yes, why?
+-   What's missing?
+-   What's unique?
 :::
 
 ::: column
-
-[![We can continue the discussion in Github's repo -discussion's section](images/repo_discussion.png)](https://github.com/WarwickCIM/quarto-workshop/discussions)
+[![We can continue the discussion in Github's repo - discussion's section](images/repo_discussion.png)](https://github.com/WarwickCIM/quarto-workshop/discussions)
 :::
-
 :::
-
 
 # What's next?
 
-If you've enjoyed the workshop and want to keep exploring quarto, there are some things that can be done:
+If you've enjoyed the workshop and want to keep exploring Quarto, there are some things that can be done:
 
-- Tell us how we did (fill in [this form](https://forms.office.com/Pages/ResponsePage.aspx?id=vc-6Ce9HZUSSZTVG8ur2vAQZ2Cjv6lBImQbzP-oFJcdUREEwWjIwU1YxQkowMURYMVpUVUxCRjhGMy4u))
-- We can continue the discussion on the repos' [discussions section](https://github.com/WarwickCIM/quarto-workshop/discussions  )
-- Keep in touch with us!
-- Keep extending the use cases and convert this into a repository for quarto use cases
-- ...
+-   Give your feedback on the activity (fill in [this form](https://forms.office.com/Pages/ResponsePage.aspx?id=vc-6Ce9HZUSSZTVG8ur2vAQZ2Cjv6lBImQbzP-oFJcdUREEwWjIwU1YxQkowMURYMVpUVUxCRjhGMy4u))
+-   We can continue the discussion on the repos' [discussions section](https://github.com/WarwickCIM/quarto-workshop/discussions)
+-   Let's keep in touch!
+-   Keep extending the use cases and convert this into a repository for Quarto use cases
+-   ...
 
 # Thanks! {background-color="#552D62"}
 
-**Carlos Cámara**, carlos.camara@warwick.ac.uk, [https://carloscamara.es/en](https://carloscamara.es/en){style="color:white!important; text-decoration:underline"} 
+**Lorenzo Campoli**
 
-**James Tripp**, james.tripp@warwick.ac.uk
-
-**Cagatay Turkay**, cagatay.turkay@warwick.ac.uk
+lorenzo.campoli\@mq.edu.au
