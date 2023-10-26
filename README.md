@@ -71,7 +71,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
-      <td align="center"><a href="https://github.com/lkampoli"><img src="https://avatars.githubusercontent.com/u/706549?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lorenzo Campoli</b></sub></a><br /><a href="https://github.com/lkampoli/quarto-workshop/commits?author=lkampoli" title="Code">💻</a> <a href="#ideas-lkmapoli" title="Ideas, Planning, & Feedback">🤔</a> <a href="#talk-lkmapoli" title="Talks">📢</a> <a href="https://github.com/lkampoli/quarto-workshop/commits?author=lkampoli" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/lkampoli"><img src="https://avatars.githubusercontent.com/u/40017451?v=4" width="100px;" alt=""/><br /><sub><b>Lorenzo Campoli</b></sub></a><br /><a href="https://github.com/lkampoli/quarto-workshop/commits?author=lkampoli" title="Code">💻</a> <a href="#ideas-lkmapoli" title="Ideas, Planning, & Feedback">🤔</a> <a href="#talk-lkmapoli" title="Talks">📢</a> <a href="https://github.com/lkampoli/quarto-workshop/commits?author=lkampoli" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
