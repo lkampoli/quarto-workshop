@@ -1,9 +1,6 @@
 # Workshop "Quarto: A library to run them all?"
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Materials for the [MQ quarto 2023] workshop: _"Quarto: a Library to run them all?"_, led by Lorenzo Campoli.
+Materials for the MQ quarto 2023 workshop: _"Quarto: a Library to run them all?"_, by Lorenzo Campoli.
 
 
 ## Overview
@@ -74,8 +71,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
-      <td align="center"><a href="https://github.com/lkampoli"><img src="https://avatars.githubusercontent.com/u/706549?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Carlos Cámara</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=ccamara" title="Code">💻</a> <a href="#ideas-ccamara" title="Ideas, Planning, & Feedback">🤔</a> <a href="#talk-ccamara" title="Talks">📢</a> <a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=ccamara" title="Documentation">📖</a></td>
-      <td align="center"><a href="https://warwick.ac.uk/fac/cross_fac/cim/people/cagatay-turkay"><img src="https://avatars.githubusercontent.com/u/4129319?v=4?s=100" width="100px;" alt=""/><br /><sub><b>cagatayTurkay</b></sub></a><br /><a href="https://github.com/WarwickCIM/quarto-workshop/commits?author=cagatayTurkay" title="Code">💻</a> <a href="#ideas-cagatayTurkay" title="Ideas, Planning, & Feedback">🤔</a></td>
+      <td align="center"><a href="https://github.com/lkampoli"><img src="https://avatars.githubusercontent.com/u/706549?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lorenzo Campoli</b></sub></a><br /><a href="https://github.com/lkampoli/quarto-workshop/commits?author=lkampoli" title="Code">💻</a> <a href="#ideas-lkmapoli" title="Ideas, Planning, & Feedback">🤔</a> <a href="#talk-lkmapoli" title="Talks">📢</a> <a href="https://github.com/lkampoli/quarto-workshop/commits?author=lkampoli" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
