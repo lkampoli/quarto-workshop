@@ -13,8 +13,7 @@ format:
   revealjs:
     #theme: serif
     theme: [default, css/warwick.scss, css/warwick-fonts.scss]
-    logo: images/logo_mq2.jpeg #logo_black.png 
-    #footer: #https://bit.ly/rsecon22-quarto
+    logo: images/logo_mq2.jpeg
     transition: slide
     background-transition: fade
 editor: visual
@@ -70,7 +69,8 @@ Let's get to know each other
 -   Interested in code reproducibility, maintainability, open science, ...
 :::
 
-## About you {background-color="black" background-image="https://healthyschoolspa.org/wp-content/uploads/2019/02/Kids-in-Class.jpeg" background-opacity="0.5"}
+## About you {background-color="black" background-image=images/classroom.png background-opacity="0.5"}
+<!-- "https://healthyschoolspa.org/wp-content/uploads/2019/02/Kids-in-Class.jpeg" background-opacity="0.5"} -->
 
 Let us know about your **prior knowledge about Quarto**
 
@@ -85,8 +85,6 @@ About your **preferred programming language**:
 
 -   R [\| Python]{.fragment} [\| Julia]{.fragment}  [\| Fortran]{.fragment}
       [\| C/C++]{.fragment} [\| ...?]{.fragment}
-
-. . .
  
 <!-- ## Disclaimer {background-color="black" background-image="https://images.unsplash.com/photo-1608094920984-5b54ce1bb792?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" background-opacity="0.4"} -->
 
@@ -154,8 +152,6 @@ written only in a high-level language ([Knuth, 1984](https://www-cs-faculty.stan
 :::
 :::
 
-. . .
-
 <!-- This might be about to change with Quarto -->
 
 ::: notes
@@ -197,7 +193,7 @@ Adapting from Mock, Quarto is...
 ::: {.column width="50%"}
 From a `qmd` file...
 
-```` {.r code-line-numbers="|1-10|12-16|17-26"}
+```` {.r code-line-numbers="|1-10|12-15|16-26"}
 ---
 title: "ggplot2 demo"
 author: "Lorenzo Campoli"
@@ -241,7 +237,7 @@ Anatomy:
 In this case, an **html document** (line 6) with text, code (folded - see line 9) and output.
 :::
 :::
-Does this look familiar to you?
+<!-- Does this look familiar to you? -->
 
 ::: notes
 We've seen what Quarto is, so now let's focus on how it does its thing.
@@ -384,7 +380,7 @@ Project is generated using `quarto render` instead of `quarto preview`
 :::
 
 ::: column
-![](images/ quarto_gallery_books.png)
+![](images/quarto_gallery_books.png)
 :::
 :::
 :::
@@ -411,7 +407,7 @@ library(leaflet)
 
 leaflet() %>%
   addTiles() %>%  # Add default OpenStreetMap map tiles
-  addMarkers(lat=-33.775259, lng= 151.112915, popup="RSECon 2022")
+  addMarkers(lat=-33.774334, lng=151.114597)
 
 ```
 :::
@@ -419,39 +415,39 @@ leaflet() %>%
 
 [^3]: More info: [Interactivity overview (Official Guide)](https://quarto.org/docs/interactive/)
 
-## Key features {.smaller background-color="rgb(236, 248, 232)"}
+<!-- ## Key features {.smaller background-color="rgb(236, 248, 232)"} -->
 
--   Language agnostic (Works with `R`, `Python`, `Julia`, `Observable`):
-    -   Can combine different languages in a single document
-    -   Same syntax
-    -   One command line
+<!-- -   Language agnostic (Works with `R`, `Python`, `Julia`, `Observable`): -->
+<!--     -   Can combine different languages in a single document -->
+<!--     -   Same syntax -->
+<!--     -   One command line -->
 
-. . .
+<!-- . . . -->
 
--   IDE Agnostic (Integrations - see [getting started](https://quarto.org/docs/get-started/))
-    -   RStudio
-    -   Visual Studio Code/VS Codium
-    -   Jupyter
+<!-- -   IDE Agnostic (Integrations - see [getting started](https://quarto.org/docs/get-started/)) -->
+<!--     -   RStudio -->
+<!--     -   Visual Studio Code/VS Codium -->
+<!--     -   Jupyter -->
 
-. . .
+<!-- . . . -->
 
--   Diverse outputs
-    -   Formats: `pdf`, `html`, `epub`, `docx`...
-    -   Media: articles, presentations (like this one!), blogs, websites, books...
--   Sensible defaults
-    -   Bootstrap
+<!-- -   Diverse outputs -->
+<!--     -   Formats: `pdf`, `html`, `epub`, `docx`... -->
+<!--     -   Media: articles, presentations (like this one!), blogs, websites, books... -->
+<!-- -   Sensible defaults -->
+<!--     -   Bootstrap -->
 
-## Key features {background-color="rgb(255, 241, 232)"}
+<!-- ## Key features {background-color="rgb(255, 241, 232)"} -->
 
-Most of the "not so great" features derive from being under heavy development:
+<!-- Most of the "not so great" features derive from being under heavy development: -->
 
--   New features to come (to be at par with knitr and to surpass it)
-    -   No new features added to `Rmarkdown`[^4]
--   Not as mature as other solutions
--   Weekly releases
-    -   Different versions, different results
+<!-- -   New features to come (to be at par with knitr and to surpass it) -->
+<!--     -   No new features added to `Rmarkdown`[^4] -->
+<!-- -   Not as mature as other solutions -->
+<!-- -   Weekly releases -->
+<!--     -   Different versions, different results -->
 
-[^4]: For more info about replacing Rmarkdown with Quarto, you can refer to [these FAQs on quarto's website](https://quarto.org/docs/faq/rmarkdown.html) and Yihui Xie's blog post [With Quarto Coming, is R Markdown Going Away? No](https://yihui.org/en/2022/04/quarto-r-markdown/)
+<!-- [^4]: For more info about replacing Rmarkdown with Quarto, you can refer to [these FAQs on quarto's website](https://quarto.org/docs/faq/rmarkdown.html) and Yihui Xie's blog post [With Quarto Coming, is R Markdown Going Away? No](https://yihui.org/en/2022/04/quarto-r-markdown/) -->
 
 ## Further references
 
@@ -476,7 +472,7 @@ Your turn, now
 
 ::: columns
 ::: column
-1.  Choose a case from the ([case list](https://github.com/WarwickCIM/quarto-workshop/labels/cases)) on GitHub.
+1.  Choose a case from the ([case list](https://github.com/lkampoli/quarto-workshop/labels/cases)) on GitHub.
 
 [2. Each case has a place in the room. Please go to the place for your corresponding case.]{.fragment}
 
@@ -495,7 +491,7 @@ Your turn, now
 ## Work on your case
 
 1.  Install quarto's binaries: <https://quarto.org/docs/get-started/>
-2.  Fork [this repository](https://github.com/WarwickCIM/quarto-workshop/)
+2.  Fork [this repository](https://github.com/lkampoli/quarto-workshop/)
 
 . . .
 
@@ -540,19 +536,19 @@ Some ideas (but feel free to add yours!):
 :::
 
 ::: column
-[![We can continue the discussion in Github's repo - discussion's section](images/repo_discussion.png)](https://github.com/WarwickCIM/quarto-workshop/discussions)
+[![We can continue the discussion in Github's repo - discussion's section](images/quarto-github2.png)](https://github.com/lkampoli/quarto-workshop/discussions)
 :::
 :::
 
-# What's next?
+<!-- # What's next? -->
 
-If you've enjoyed the workshop and want to keep exploring Quarto, there are some things that can be done:
+<!-- If you've enjoyed the workshop and want to keep exploring Quarto, there are some things that can be done: -->
 
--   Give your feedback on the activity (fill in [this form](https://forms.office.com/Pages/ResponsePage.aspx?id=vc-6Ce9HZUSSZTVG8ur2vAQZ2Cjv6lBImQbzP-oFJcdUREEwWjIwU1YxQkowMURYMVpUVUxCRjhGMy4u))
--   We can continue the discussion on the repos' [discussions section](https://github.com/WarwickCIM/quarto-workshop/discussions)
--   Let's keep in touch!
--   Keep extending the use cases and convert this into a repository for Quarto use cases
--   ...
+<!-- -   Give your feedback on the activity (fill in [this form](https://forms.office.com/Pages/ResponsePage.aspx?id=vc-6Ce9HZUSSZTVG8ur2vAQZ2Cjv6lBImQbzP-oFJcdUREEwWjIwU1YxQkowMURYMVpUVUxCRjhGMy4u)) -->
+<!-- -   We can continue the discussion on the repos' [discussions section](https://github.com/WarwickCIM/quarto-workshop/discussions) -->
+<!-- -   Let's keep in touch! -->
+<!-- -   Keep extending the use cases and convert this into a repository for Quarto use cases -->
+<!-- -   ... -->
 
 # Thanks! {background-color="#552D62"}
 

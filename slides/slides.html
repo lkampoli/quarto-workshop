@@ -466,8 +466,9 @@ Lorenzo Campoli
 </ul>
 </div>
 </section>
-<section id="about-you" class="slide level2" data-background-color="black" data-background-image="https://healthyschoolspa.org/wp-content/uploads/2019/02/Kids-in-Class.jpeg" data-background-opacity="0.5">
+<section id="about-you" class="slide level2" data-background-color="black" data-background-image="images/classroom.png" data-background-opacity="0.5">
 <h2>About you</h2>
+<!-- "https://healthyschoolspa.org/wp-content/uploads/2019/02/Kids-in-Class.jpeg" background-opacity="0.5"} -->
 <p>Let us know about your <strong>prior knowledge about Quarto</strong></p>
 <ol type="1">
 <li>Experts</li>
@@ -480,8 +481,6 @@ Lorenzo Campoli
 <ul>
 <li>R <span class="fragment">| Python</span> <span class="fragment">| Julia</span> <span class="fragment">| Fortran</span> <span class="fragment">| C/C++</span> <span class="fragment">| …?</span></li>
 </ul>
-</div>
-<div class="fragment">
 <!-- ## Disclaimer {background-color="black" background-image="https://images.unsplash.com/photo-1608094920984-5b54ce1bb792?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" background-opacity="0.4"} -->
 <!-- **About me** -->
 <!-- I am not Quarto expert! -->
@@ -535,8 +534,6 @@ Lorenzo Campoli
 </ul>
 </div>
 </div>
-</div>
-<div class="fragment">
 <!-- This might be about to change with Quarto -->
 <aside class="notes">
 <p>But before actually speaking about Quarto, I wanted to highlight two items.</p>
@@ -590,7 +587,7 @@ Lorenzo Campoli
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>From a <code>qmd</code> file…</p>
-<div class="sourceCode" id="cb1" data-code-line-numbers="|1-10|12-16|17-26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="sc">---</span></span>
+<div class="sourceCode" id="cb1" data-code-line-numbers="|1-10|12-15|16-26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="sc">---</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a>title<span class="sc">:</span> <span class="st">"ggplot2 demo"</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a>author<span class="sc">:</span> <span class="st">"Lorenzo Campoli"</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a>date<span class="sc">:</span> <span class="st">"27/10/2023"</span></span>
@@ -630,7 +627,7 @@ Lorenzo Campoli
 <p>In this case, an <strong>html document</strong> (line 6) with text, code (folded - see line 9) and output.</p>
 </div>
 </div>
-<p>Does this look familiar to you?</p>
+<!-- Does this look familiar to you? -->
 <aside class="notes">
 <p>We’ve seen what Quarto is, so now let’s focus on how it does its thing.</p>
 <p>At this point, if there’s someone who has used Rmd before may be thinking. But Lorenzo, you’ve just defined how rmd works!</p>
@@ -793,7 +790,7 @@ Lorenzo Campoli
 </div>
 </div>
 </div><div class="column">
-<p><img data-src="images/%20quarto_gallery_books.png"></p>
+<p><img data-src="images/quarto_gallery_books.png"></p>
 </div>
 </div>
 </div>
@@ -825,64 +822,39 @@ Lorenzo Campoli
 <span id="cb3-2"><a href="#cb3-2"></a></span>
 <span id="cb3-3"><a href="#cb3-3"></a><span class="fu">leaflet</span>() <span class="sc">%&gt;%</span></span>
 <span id="cb3-4"><a href="#cb3-4"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span>  <span class="co"># Add default OpenStreetMap map tiles</span></span>
-<span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">addMarkers</span>(<span class="at">lat=</span><span class="sc">-</span><span class="fl">33.775259</span>, <span class="at">lng=</span> <span class="fl">151.112915</span>, <span class="at">popup=</span><span class="st">"RSECon 2022"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">addMarkers</span>(<span class="at">lat=</span><span class="sc">-</span><span class="fl">33.774334</span>, <span class="at">lng=</span><span class="fl">151.114597</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-b5eb72fcfad0366f34d8" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-b5eb72fcfad0366f34d8">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[-33.775259,151.112915,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"RSECon 2022",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-33.775259,-33.775259],"lng":[151.112915,151.112915]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-518e62c57102563c7f05" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-518e62c57102563c7f05">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[-33.774334,151.114597,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-33.774334,-33.774334],"lng":[151.114597,151.114597]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
 </div>
+<!-- ## Key features {.smaller background-color="rgb(236, 248, 232)"} -->
+<!-- -   Language agnostic (Works with `R`, `Python`, `Julia`, `Observable`): -->
+<!--     -   Can combine different languages in a single document -->
+<!--     -   Same syntax -->
+<!--     -   One command line -->
+<!-- . . . -->
+<!-- -   IDE Agnostic (Integrations - see [getting started](https://quarto.org/docs/get-started/)) -->
+<!--     -   RStudio -->
+<!--     -   Visual Studio Code/VS Codium -->
+<!--     -   Jupyter -->
+<!-- . . . -->
+<!-- -   Diverse outputs -->
+<!--     -   Formats: `pdf`, `html`, `epub`, `docx`... -->
+<!--     -   Media: articles, presentations (like this one!), blogs, websites, books... -->
+<!-- -   Sensible defaults -->
+<!--     -   Bootstrap -->
+<!-- ## Key features {background-color="rgb(255, 241, 232)"} -->
+<!-- Most of the "not so great" features derive from being under heavy development: -->
+<!-- -   New features to come (to be at par with knitr and to surpass it) -->
+<!--     -   No new features added to `Rmarkdown`[^4] -->
+<!-- -   Not as mature as other solutions -->
+<!-- -   Weekly releases -->
+<!--     -   Different versions, different results -->
+<!-- [^4]: For more info about replacing Rmarkdown with Quarto, you can refer to [these FAQs on quarto's website](https://quarto.org/docs/faq/rmarkdown.html) and Yihui Xie's blog post [With Quarto Coming, is R Markdown Going Away? No](https://yihui.org/en/2022/04/quarto-r-markdown/) -->
 <aside><ol class="aside-footnotes"><li id="fn3"><p>More info: <a href="https://quarto.org/docs/interactive/">Interactivity overview (Official Guide)</a></p></li></ol></aside></section>
-<section id="key-features" class="slide level2 smaller" data-background-color="rgb(236, 248, 232)">
-<h2>Key features</h2>
-<ul>
-<li>Language agnostic (Works with <code>R</code>, <code>Python</code>, <code>Julia</code>, <code>Observable</code>):
-<ul>
-<li>Can combine different languages in a single document</li>
-<li>Same syntax</li>
-<li>One command line</li>
-</ul></li>
-</ul>
-<div class="fragment">
-<ul>
-<li>IDE Agnostic (Integrations - see <a href="https://quarto.org/docs/get-started/">getting started</a>)
-<ul>
-<li>RStudio</li>
-<li>Visual Studio Code/VS Codium</li>
-<li>Jupyter</li>
-</ul></li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Diverse outputs
-<ul>
-<li>Formats: <code>pdf</code>, <code>html</code>, <code>epub</code>, <code>docx</code>…</li>
-<li>Media: articles, presentations (like this one!), blogs, websites, books…</li>
-</ul></li>
-<li>Sensible defaults
-<ul>
-<li>Bootstrap</li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section id="key-features-1" class="slide level2" data-background-color="rgb(255, 241, 232)">
-<h2>Key features</h2>
-<p>Most of the “not so great” features derive from being under heavy development:</p>
-<ul>
-<li>New features to come (to be at par with knitr and to surpass it)
-<ul>
-<li>No new features added to <code>Rmarkdown</code><sup>1</sup></li>
-</ul></li>
-<li>Not as mature as other solutions</li>
-<li>Weekly releases
-<ul>
-<li>Different versions, different results</li>
-</ul></li>
-</ul>
-<aside><ol class="aside-footnotes"><li id="fn4"><p>For more info about replacing Rmarkdown with Quarto, you can refer to <a href="https://quarto.org/docs/faq/rmarkdown.html">these FAQs on quarto’s website</a> and Yihui Xie’s blog post <a href="https://yihui.org/en/2022/04/quarto-r-markdown/">With Quarto Coming, is R Markdown Going Away? No</a></p></li></ol></aside></section>
 <section id="further-references" class="slide level2">
 <h2>Further references</h2>
 <p>These references introduce Quarto way more extensively than I just did:</p>
@@ -910,7 +882,7 @@ Lorenzo Campoli
 <div class="columns">
 <div class="column">
 <ol type="1">
-<li>Choose a case from the (<a href="https://github.com/WarwickCIM/quarto-workshop/labels/cases">case list</a>) on GitHub.</li>
+<li>Choose a case from the (<a href="https://github.com/lkampoli/quarto-workshop/labels/cases">case list</a>) on GitHub.</li>
 </ol>
 <p><span class="fragment">2. Each case has a place in the room. Please go to the place for your corresponding case.</span></p>
 <p><span class="fragment">3. Form groups of 4 or 5. Say hi to your new friends and colleagues.</span></p>
@@ -925,7 +897,7 @@ Lorenzo Campoli
 <h2>Work on your case</h2>
 <ol type="1">
 <li>Install quarto’s binaries: <a href="https://quarto.org/docs/get-started/" class="uri">https://quarto.org/docs/get-started/</a></li>
-<li>Fork <a href="https://github.com/WarwickCIM/quarto-workshop/">this repository</a></li>
+<li>Fork <a href="https://github.com/lkampoli/quarto-workshop/">this repository</a></li>
 </ol>
 <div class="fragment">
 <ol start="3" type="1">
@@ -984,25 +956,20 @@ Lorenzo Campoli
 </div><div class="column">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="https://github.com/WarwickCIM/quarto-workshop/discussions"><img data-src="images/repo_discussion.png"></a></p>
+<p><a href="https://github.com/lkampoli/quarto-workshop/discussions"><img data-src="images/quarto-github2.png"></a></p>
 <figcaption>We can continue the discussion in Github’s repo - discussion’s section</figcaption>
 </figure>
 </div>
 </div>
 </div>
+<!-- # What's next? -->
+<!-- If you've enjoyed the workshop and want to keep exploring Quarto, there are some things that can be done: -->
+<!-- -   Give your feedback on the activity (fill in [this form](https://forms.office.com/Pages/ResponsePage.aspx?id=vc-6Ce9HZUSSZTVG8ur2vAQZ2Cjv6lBImQbzP-oFJcdUREEwWjIwU1YxQkowMURYMVpUVUxCRjhGMy4u)) -->
+<!-- -   We can continue the discussion on the repos' [discussions section](https://github.com/WarwickCIM/quarto-workshop/discussions) -->
+<!-- -   Let's keep in touch! -->
+<!-- -   Keep extending the use cases and convert this into a repository for Quarto use cases -->
+<!-- -   ... -->
 </section></section>
-<section id="whats-next" class="title-slide slide level1 center">
-<h1>What’s next?</h1>
-<p>If you’ve enjoyed the workshop and want to keep exploring Quarto, there are some things that can be done:</p>
-<ul>
-<li>Give your feedback on the activity (fill in <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=vc-6Ce9HZUSSZTVG8ur2vAQZ2Cjv6lBImQbzP-oFJcdUREEwWjIwU1YxQkowMURYMVpUVUxCRjhGMy4u">this form</a>)</li>
-<li>We can continue the discussion on the repos’ <a href="https://github.com/WarwickCIM/quarto-workshop/discussions">discussions section</a></li>
-<li>Let’s keep in touch!</li>
-<li>Keep extending the use cases and convert this into a repository for Quarto use cases</li>
-<li>…</li>
-</ul>
-</section>
-
 <section id="thanks" class="title-slide slide level1 center" data-background-color="#552D62">
 <h1>Thanks!</h1>
 <p><strong>Lorenzo Campoli</strong></p>
