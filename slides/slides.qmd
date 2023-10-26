@@ -62,10 +62,12 @@ Let's get to know each other
 
 [lorenzo.campoli\@mq.edu.au](mailto:lorenzo.campoli@mq.edu.au){.email}
 
+-   Bachelor, Masters and Phd from Sapienza University of Rome
+-   Several international experience (NASA, INRIA, SPBGU, UniMelb)
 -   Research interests: Computational Fluid Dynamics (CFD), 
     high-speed non-equilibrium flows, shock-fitting numerical methods,
     data-driven turbulence closure modelling, unsupervised machine learning
--   New R user
+-   New R user (old Python, Julia, Fortran, C/C++ user)
 -   Interested in code reproducibility, maintainability, open science, ...
 :::
 
@@ -85,7 +87,11 @@ About your **preferred programming language**:
 
 -   R [\| Python]{.fragment} [\| Julia]{.fragment}  [\| Fortran]{.fragment}
       [\| C/C++]{.fragment} [\| ...?]{.fragment}
- 
+
+. . . 
+
+- What about your **typical work pipeline**?
+
 <!-- ## Disclaimer {background-color="black" background-image="https://images.unsplash.com/photo-1608094920984-5b54ce1bb792?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" background-opacity="0.4"} -->
 
 <!-- **About me** -->
@@ -484,7 +490,7 @@ Your turn, now
 ::: column
 ![](images/task_list.png)
 
-![](images/task_description.png)
+![](images/taskmod  .png)
 :::
 :::
 
